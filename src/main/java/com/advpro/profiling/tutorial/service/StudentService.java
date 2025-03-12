@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * @author muhammad.khadafi
@@ -30,8 +31,10 @@ public class StudentService {
         return studentRepository.findTopByOrderByGpaDesc();
     }
 
-    public List<String> joinStudentNames() {
-        return studentRepository.findAllNames();
+    public String joinStudentNames() {
+        return studentRepository.findAllNames()
+                .stream()
+                .collect(Collectors.joining(", "));
     }
 }
 
