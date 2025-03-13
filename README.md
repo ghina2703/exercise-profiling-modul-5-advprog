@@ -1,3 +1,9 @@
+### **Nama**    : **Ghina Nabila Gunawan**
+
+### **NPM**     : **2206825914**
+
+### **Kelas**   : **AdvProg - A**
+
 ## 📝 Performance Testing & Profiling Results
 
 ### 🚀 Test Plan Results (Before Optimization)
